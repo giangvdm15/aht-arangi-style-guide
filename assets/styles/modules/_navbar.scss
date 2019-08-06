@@ -1,0 +1,18 @@
+.navbar {
+    padding-top: 23px;
+}
+
+.bg-light {
+    background-color: $color__white !important;
+}
+
+.navbar-light {
+    .navbar-nav {
+        a {
+            &.nav-link {
+                font-family: 'Raleway', sans-serif;
+                color: $color__black;
+            }
+        }
+    }
+}

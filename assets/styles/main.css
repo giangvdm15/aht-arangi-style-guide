@@ -1,0 +1,30 @@
+/**
+ * Partials
+ *
+ */
+* {
+  font-family: "Domine", serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif !important;
+}
+
+/**
+ * Modules
+ *
+ */
+.navbar {
+  padding-top: 23px;
+}
+
+.bg-light {
+  background-color: #fff !important;
+}
+
+.navbar-light .navbar-nav a.nav-link {
+  font-family: "Raleway", sans-serif;
+  color: #000;
+}
+
+/*# sourceMappingURL=main.css.map */

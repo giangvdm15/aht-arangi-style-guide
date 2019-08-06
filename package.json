@@ -1,0 +1,26 @@
+{
+  "name": "style-guide",
+  "version": "1.0.0",
+  "description": "Just a front-end project @ AHT JSC.",
+  "main": "index.js",
+  "dependencies": {
+    "jquery": "^1.9.1",
+    "popper.js": "^1.15.0"
+  },
+  "devDependencies": {
+    "bootstrap": "^4.3.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giangvdm15/aht-style-guide-arangi-style-guide.git"
+  },
+  "author": "Giang Vu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/giangvdm15/aht-style-guide-arangi-style-guide/issues"
+  },
+  "homepage": "https://github.com/giangvdm15/aht-style-guide-arangi-style-guide#readme"
+}
