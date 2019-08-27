@@ -2,11 +2,28 @@
  * Partials
  *
  */
+@import 'helpers/_mixins';
+
+/**
+ * Partials
+ *
+ */
 @import 'partials/variables';
+@import 'partials/override';
 @import 'partials/base';
+@import 'partials/typography';
+
+/**
+ * Components
+ *
+ */
+@import 'components/color-box';
+@import 'components/typography';
 
 /**
  * Modules
  *
  */
 @import 'modules/navbar';
+@import 'modules/header';
+@import 'modules/main-content';

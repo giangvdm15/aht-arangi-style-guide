@@ -1,0 +1,39 @@
+.typography {
+    &__style {
+        &--arrow-right {
+            position: relative;
+
+            &::before {
+                content: '\fd09';
+                font-family: 'Font Awesome 5 Free';
+                color: $color__purple--base;
+                position: absolute;
+                left: -20px;
+            }
+        }
+
+        &--uppercase {
+            text-transform: uppercase;
+            font-size: $font-size__12 !important;
+            line-height: 2.25;
+            font-weight: bold;
+        }
+    }
+
+    &__anchor {
+        &--hover {
+            color: $color__purple--base;
+        }
+    }
+}
+
+.text-link-collection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 20px;
+
+    a.text-link__item {
+        font-size: $font-size__18;
+    }
+}

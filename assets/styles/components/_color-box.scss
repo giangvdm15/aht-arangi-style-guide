@@ -1,0 +1,48 @@
+.color-figure {
+    display: inline-block;
+    margin: 0 13px;
+    &:first-child {
+        margin-left: 0;
+    }
+    &:last-child {
+        margin-right: 0;
+    }
+    
+    .color-box {
+        width: 70px;
+        height: 70px;
+    
+        &.purple {
+            background-color: $color__purple--base;
+        }
+        &.green {
+            background-color: $color__green--base;
+        }
+        &.blue {
+            background-color: $color__blue--base;
+        }
+        &.black {
+            background-color: $color__black--base;
+        }
+        &.gray {
+            background-color: $color__gray--base;
+        }
+    }
+    
+    .color-code {
+        text-align: center;
+        font-size: $font-size__15;
+        color: $color__gray--base;
+        line-height: 1;
+        margin-top: 17px;
+    }
+
+}
+
+
+.color-collection {
+    // display: flex;
+    // flex-direction: row;
+    // flex-wrap: wrap;
+    // float: left;
+}

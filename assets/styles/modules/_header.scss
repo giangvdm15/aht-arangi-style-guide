@@ -1,0 +1,27 @@
+header {
+
+    margin-bottom: 2px; // push the content down a bit
+
+    &.my__header {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        padding-top: 95px;
+        padding-bottom: 100px;
+    }
+
+    &#header {
+        background-image: url('../images/banner.jpg');
+    }
+}
+
+.header__title {
+    color: $color__white--natural;
+    margin-top: 0 !important;
+
+    &::after {
+        content: " ";
+        margin-top: 10px;
+    }
+}

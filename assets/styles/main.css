@@ -2,13 +2,170 @@
  * Partials
  *
  */
-* {
-  font-family: "Domine", serif;
-}
+/**
+ * Partials
+ *
+ */
+.container {
+  max-width: 1170px;
+  padding-right: 0;
+  padding-left: 0; }
+
+.row {
+  padding: 0 15px; }
+
+.breadcrumb {
+  padding: 0;
+  margin-bottom: 0;
+  background-color: transparent;
+  border-radius: 0;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.5px; }
+
+.breadcrumb-item {
+  color: #c44860; }
+  .breadcrumb-item + .breadcrumb-item {
+    padding-left: 0rem; }
+    .breadcrumb-item + .breadcrumb-item::before {
+      color: #c44860; }
+  .breadcrumb-item a {
+    color: #c44860;
+    font-size: 0.9375rem !important; }
+  .breadcrumb-item.active {
+    color: #fff; }
+
+body {
+  background-color: #faf9f7; }
+
+a {
+  color: inherit; }
+  a:hover {
+    color: inherit;
+    text-decoration: none; }
+
+div[class^=col-]:first-child {
+  padding-left: 0; }
+div[class^=col-]:last-child {
+  padding-right: 0; }
+
+.module__title {
+  margin-top: 102px;
+  text-transform: capitalize; }
+.module__content {
+  padding-top: 15px; }
+
+body {
+  font-family: 'Domine', serif;
+  color: #797476; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway", sans-serif !important;
-}
+  font-family: 'Raleway', sans-serif !important;
+  color: #333;
+  line-height: normal;
+  margin-top: 30px; }
+
+h1 {
+  font-size: 2.1875rem;
+  font-weight: 700;
+  margin: "0 0 1.25rem 0";
+  color: ""; }
+
+h2 {
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin: "0 0 1.25rem 0";
+  color: ""; }
+
+h3 {
+  font-size: 1.5625rem;
+  font-weight: 700;
+  margin: "0 0 1.25rem 0";
+  color: ""; }
+
+h4 {
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin: "0 0 1.25rem 0";
+  color: ""; }
+
+h5 {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  margin: "0 0 1.25rem 0";
+  color: ""; }
+
+p {
+  font-size: 0.9375rem;
+  line-height: 1.65rem; }
+  p#dummy-text {
+    margin-top: 15px;
+    margin-bottom: 100px; }
+
+a {
+  font-family: 'Raleway', sans-serif !important;
+  color: #333;
+  line-height: normal; }
+  a:hover {
+    color: #c44860; }
+
+/**
+ * Components
+ *
+ */
+.color-figure {
+  display: inline-block;
+  margin: 0 13px; }
+  .color-figure:first-child {
+    margin-left: 0; }
+  .color-figure:last-child {
+    margin-right: 0; }
+  .color-figure .color-box {
+    width: 70px;
+    height: 70px; }
+    .color-figure .color-box.purple {
+      background-color: #c44860; }
+    .color-figure .color-box.green {
+      background-color: #4d772d; }
+    .color-figure .color-box.blue {
+      background-color: #5892d0; }
+    .color-figure .color-box.black {
+      background-color: #333; }
+    .color-figure .color-box.gray {
+      background-color: #797476; }
+  .color-figure .color-code {
+    text-align: center;
+    font-size: 0.9375rem;
+    color: #797476;
+    line-height: 1;
+    margin-top: 17px; }
+
+.typography__style--arrow-right {
+  position: relative; }
+  .typography__style--arrow-right::before {
+    content: '\fd09';
+    font-family: 'Font Awesome 5 Free';
+    color: #c44860;
+    position: absolute;
+    left: -20px; }
+.typography__style--uppercase {
+  text-transform: uppercase;
+  font-size: 0.75rem !important;
+  line-height: 2.25;
+  font-weight: bold; }
+.typography__anchor--hover {
+  color: #c44860; }
+
+.text-link-collection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 20px; }
+  .text-link-collection a.text-link__item {
+    font-size: 1.125rem; }
 
 /**
  * Modules
@@ -16,15 +173,31 @@ h1, h2, h3, h4, h5, h6 {
  */
 .navbar {
   padding-top: 23px;
-}
+  padding-bottom: 23px; }
 
 .bg-light {
-  background-color: #fff !important;
-}
+  background-color: #fff !important; }
 
 .navbar-light .navbar-nav a.nav-link {
-  font-family: "Raleway", sans-serif;
-  color: #000;
-}
+  font-family: 'Raleway', sans-serif;
+  color: #333; }
+
+header {
+  margin-bottom: 2px; }
+  header.my__header {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 95px;
+    padding-bottom: 100px; }
+  header#header {
+    background-image: url("../images/banner.jpg"); }
+
+.header__title {
+  color: #fff;
+  margin-top: 0 !important; }
+  .header__title::after {
+    content: " ";
+    margin-top: 10px; }
 
 /*# sourceMappingURL=main.css.map */

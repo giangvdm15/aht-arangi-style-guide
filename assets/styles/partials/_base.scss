@@ -1,7 +1,36 @@
-* {
-    font-family: 'Domine', serif;
+body {
+    background-color: $color__white--base;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Raleway', sans-serif !important;
+a {
+    color: inherit;
+    
+    &:hover {
+        color: inherit;
+        text-decoration: none;
+    }
+}
+
+// Remove gutter from first and last columns
+div[class^=col-] {
+    
+    &:first-child {
+        padding-left: 0;
+    }
+
+    &:last-child {
+        padding-right: 0;
+    }
+}
+
+.module {
+
+    &__title {
+        margin-top: 102px;
+        text-transform: capitalize;
+    }
+
+    &__content {
+        padding-top: 15px;
+    }
 }

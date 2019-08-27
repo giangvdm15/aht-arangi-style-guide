@@ -1,0 +1,44 @@
+// LAYOUT
+.container {
+    max-width: 1170px;
+    padding-right: 0;
+    padding-left: 0;
+}
+.row {
+    padding: 0 15px;
+}
+
+// BREADCRUMB
+.breadcrumb {
+    padding: 0;
+    margin-bottom: 0;
+    background-color: transparent;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-size: $font-size__15;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.5px;
+}
+.breadcrumb-item {
+    
+    color: $color__purple--base;
+    
+    + .breadcrumb-item {
+        padding-left: 0rem; // make the slash "/" closer to the prior item
+        
+        &::before {
+            color: $color__purple--base; // and change its color to match with the prior item
+        }
+    }
+    
+    a {
+        color: $color__purple--base;
+        font-size: $font-size__15 !important;
+    }
+
+    &.active {
+        color: $color__white--natural;
+    }
+}

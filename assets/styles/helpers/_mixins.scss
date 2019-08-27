@@ -1,0 +1,12 @@
+@mixin typographyDefine($size, $weight, $margin, $color:"") {
+    font-size: $size;
+    font-weight: $weight;
+    margin: $margin;
+    color: $color;
+}
+
+@mixin typographyRalewayStandard() {
+    font-family: 'Raleway', sans-serif !important;
+    color: $color__black--base;
+    line-height: normal;
+}

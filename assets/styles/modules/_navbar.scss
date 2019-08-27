@@ -1,9 +1,10 @@
 .navbar {
     padding-top: 23px;
+    padding-bottom: 23px;
 }
 
 .bg-light {
-    background-color: $color__white !important;
+    background-color: $color__white--natural !important;
 }
 
 .navbar-light {
@@ -11,7 +12,7 @@
         a {
             &.nav-link {
                 font-family: 'Raleway', sans-serif;
-                color: $color__black;
+                color: $color__black--base;
             }
         }
     }

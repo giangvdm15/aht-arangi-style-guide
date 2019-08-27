@@ -1,0 +1,47 @@
+body {
+    font-family: 'Domine', serif;
+    color: $color__gray--base;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    @include typographyRalewayStandard();
+    margin-top: 30px;
+}
+
+h1 {
+    @include typographyDefine($font-size__35, 700, '0 0 1.25rem 0');
+}
+
+h2 {
+    @include typographyDefine($font-size__30, 700, '0 0 1.25rem 0');
+}
+
+h3 {
+    @include typographyDefine($font-size__25, 700, '0 0 1.25rem 0');
+}
+
+h4 {
+    @include typographyDefine($font-size__14, 600, '0 0 1.25rem 0');
+}
+
+h5 {
+    @include typographyDefine($font-size__13, 600, '0 0 1.25rem 0');
+}
+
+p {
+    font-size: $font-size__15;
+    line-height: 1.65rem;
+
+    &#dummy-text {
+        margin-top: 15px;
+        margin-bottom: 100px;
+    }
+}
+
+a {
+    @include typographyRalewayStandard();
+
+    &:hover {
+        color: $color__purple--base;
+    }
+}
