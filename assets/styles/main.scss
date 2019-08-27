@@ -14,16 +14,16 @@
 @import 'partials/typography';
 
 /**
- * Components
- *
- */
-@import 'components/color-box';
-@import 'components/typography';
-
-/**
  * Modules
  *
  */
-@import 'modules/navbar';
-@import 'modules/header';
-@import 'modules/main-content';
+@import 'modules/color-box';
+@import 'modules/typography';
+
+/**
+ * Sections
+ *
+ */
+@import 'sections/navbar';
+@import 'sections/header';
+@import 'sections/main-content';
