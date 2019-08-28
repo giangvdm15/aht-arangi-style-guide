@@ -1,0 +1,35 @@
+.list-collection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+ul[class|=arangi__list], ol[class|=arangi__list] {
+
+    display: inline-block;
+
+    li {
+        font-size: $font-size__15;
+
+        &:not(:last-child) {
+            margin-bottom: 18px;
+        }
+
+        &.hover {
+            color: $color__purple--base;
+        }
+    }
+    
+    &[class*=--no-bullet] {
+        @include resetList(true);
+
+        li {
+            &.hover {
+                &::before {
+                    content: "--";
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}

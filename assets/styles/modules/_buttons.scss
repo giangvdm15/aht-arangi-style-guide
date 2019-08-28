@@ -75,7 +75,7 @@
 
 ul.input-pill {
     // reset
-    @include resetList();
+    @include resetList(true);
     display: inline-block;
 
     li {

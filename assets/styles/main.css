@@ -182,15 +182,15 @@ a {
     line-height: 1;
     border: 2px solid transparent; }
     .button-figure button[class|=arangi__button][class*=--gradient] {
-      background: linear-gradient(#faf9f7, #faf9f7) padding-box, linear-gradient(to bottom, #c44860, #f3ac7b) border-box; }
+      background: linear-gradient(#faf9f7, #faf9f7) padding-box, linear-gradient(to bottom, #c44860, #f4ae7b) border-box; }
       .button-figure button[class|=arangi__button][class*=--gradient]:hover, .button-figure button[class|=arangi__button][class*=--gradient][class*=--hover] {
         color: #fff !important;
-        background: linear-gradient(to bottom, #c44860, #f3ac7b) border-box; }
+        background: linear-gradient(to bottom, #c44860, #f4ae7b) border-box; }
     .button-figure button[class|=arangi__button][class*=--solid] {
       background: #c44860;
       color: #fff !important; }
       .button-figure button[class|=arangi__button][class*=--solid]:hover, .button-figure button[class|=arangi__button][class*=--solid][class*=--hover] {
-        background: #f3ac7b; }
+        background: #f4ae7b; }
     .button-figure button[class|=arangi__button][class*=--height-55] {
       padding: 18px 39px;
       letter-spacing: 1px;
@@ -247,6 +247,27 @@ ul.input-pill {
         background: transparent;
         width: 100%;
         text-align: center; }
+
+.list-collection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+ul[class|=arangi__list], ol[class|=arangi__list] {
+  display: inline-block; }
+  ul[class|=arangi__list] li, ol[class|=arangi__list] li {
+    font-size: 0.9375rem; }
+    ul[class|=arangi__list] li:not(:last-child), ol[class|=arangi__list] li:not(:last-child) {
+      margin-bottom: 18px; }
+    ul[class|=arangi__list] li.hover, ol[class|=arangi__list] li.hover {
+      color: #c44860; }
+  ul[class|=arangi__list][class*=--no-bullet], ol[class|=arangi__list][class*=--no-bullet] {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+    ul[class|=arangi__list][class*=--no-bullet] li.hover::before, ol[class|=arangi__list][class*=--no-bullet] li.hover::before {
+      content: "--";
+      margin-right: 10px; }
 
 /**
  * Sections

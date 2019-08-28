@@ -11,8 +11,10 @@
     line-height: 1;
 }
 
-@mixin resetList() {
-    list-style-type: none;
+@mixin resetList($resetListStyleType: false) {
+    @if ($resetListStyleType == true) {
+        list-style-type: none;
+    }
     margin: 0;
     padding: 0;
 }
