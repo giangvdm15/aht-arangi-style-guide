@@ -1,0 +1,116 @@
+.button-collection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.button-figure {
+
+    display: inline-block;
+    align-self: flex-end;
+    
+    button[class|=arangi__button] {
+        @include typographyRalewayStandard();
+        border: 2px solid transparent;
+        
+        // Color style
+        &[class*=--gradient] {
+            background: 
+                linear-gradient($color__white--base, $color__white--base) padding-box,
+                linear-gradient(to bottom, $color__purple--base, $color__orange--base) border-box;
+
+            &:hover, &[class*=--hover] {
+                color: $color__white--natural !important;
+                background: linear-gradient(to bottom, $color__purple--base, $color__orange--base) border-box;
+            }
+        }
+
+        &[class*=--solid] {
+            background: $color__purple--base;
+            color: $color__white--natural !important;
+
+            &:hover, &[class*=--hover] {
+                background: $color__orange--base;
+            }
+        }
+
+        // Size
+        &[class*=--height-55] {
+            padding: 18px 39px;
+            letter-spacing: 1px;
+            font-size: 1rem;
+            border-radius: 50px;
+        }
+        
+        &[class*=--height-40] {
+            padding: 10px 30px;
+            letter-spacing: 0.5px;
+            font-size: $font-size__14;
+            border-radius: 40px;
+        }
+            
+        &[class*=--height-32] {
+            padding: 8px 20px;
+            font-size: $font-size__13;
+            border-radius: 30px;
+        }
+    }
+
+    .button-caption {
+        margin-top: 20px;
+        font-size: $font-size__15;
+        color: $color__gray--base;
+        line-height: 1;
+        text-align: center;
+    }
+}
+
+.arrow-block {
+    display: inline-block;
+    color: $color__gray--base;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+ul.input-pill {
+    // reset
+    @include resetList();
+    display: inline-block;
+
+    li {
+        display: inline-block;
+        width: 40px;
+        text-align: center;
+        font-size: $font-size__15;
+        padding: 17px 0;
+
+        &::after {
+            content: none;
+        }
+
+        &[class|=pill__button] {
+            border: 2px solid $color__gray--light;
+
+            &[class*=--left] {
+                border-right: none;
+                border-radius: 50px 0 0 50px;
+            }
+            
+            &[class*=--right] {
+                border-left: none;
+                border-radius: 0 50px 50px 0;
+            }
+        }
+
+        &.pill__center {
+            border-top: 2px solid $color__gray--light;
+            border-bottom: 2px solid $color__gray--light;
+
+            input {
+                @include resetInput();
+                text-align: center;
+            }
+        }
+    }
+}
