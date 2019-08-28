@@ -1,0 +1,37 @@
+input[type=text], select {
+    font-size: $font-size__15;
+    padding: 9px 15px !important;
+}
+
+select {
+    color: $color__gray--base;
+}
+
+.arangi__input {
+    &--focus, &--active {
+        color: $color__black--base;
+        outline: none;
+        box-shadow: none;
+        border-color: $color__black--base;
+        background-color: transparent;
+    }
+
+    &--error {
+        border-color: $color__purple--base;
+        
+        + small.form-text {
+            color: $color__purple--base;
+            font-size: $font-size__14;
+            letter-spacing: 0.5px;
+            margin-top: 15px;
+        }
+    }
+}
+
+.form-check-collection {
+
+//     [class*=wrapper] {
+//         float: left;
+//         margin-right:
+//     }
+}

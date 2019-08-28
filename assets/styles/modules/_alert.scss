@@ -21,6 +21,10 @@
             margin-left: auto;
             width: 26px;
             height: auto;
+
+            &:hover {
+                cursor: pointer;
+            }
             
             i.ti-close {
                 background-color: $color__white--natural;

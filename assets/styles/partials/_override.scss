@@ -42,3 +42,37 @@
         color: $color__white--natural;
     }
 }
+
+// FORM
+label {
+    margin-bottom: 14px;
+    font-size: $font-size__15;
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-control {
+
+    padding: 0;
+    background-color: transparent;
+    border-color: $color__gray--light;
+    border-style: dashed;
+    border-radius: 50px;
+    color: $color__black--base;
+    height: auto;
+
+    &:focus, &:active {
+        color: $color__black--base;
+        outline: none;
+        box-shadow: none;
+        border-color: $color__black--base;
+        background-color: transparent;
+    }
+}

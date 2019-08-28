@@ -1,0 +1,45 @@
+.arangi__module--forms
+    h2.module__title forms
+    .module__content
+        form(action="#")
+            .form-group
+                label(for="text-field") Text Field
+                input(type="text", name="text-field").form-control#text-field
+            .form-group
+                label(for="text-field-dropdown") Text Field Dropdown
+                select.form-control#text-field-dropdown
+                    option Australia
+                    option UK
+                    option Germany
+                    option US
+                    option Japan
+            .form-group
+                label(for="text-field-focus") Text Field Focus
+                input(type="text", name="text-field").form-control.arangi__input--focus#text-field-focus
+            .form-group
+                label(for="text-field-error") Text Field Error
+                input(type="text", name="text-field").form-control.arangi__input--error#text-field-error
+                small.form-text Please enter email address
+            .form-group
+                select(multiple="true").form-control#select-multiple
+                    option Option 1
+                    option Option 2
+                    option Option 3
+                    option Option 4
+                    option Option 5
+            .form-check-collection.container
+                .row
+                    .checkbox-wrapper.col-4
+                        .form-check
+                            input(type="checkbox").form-check-input#checkbox-default
+                            label(for="checkbox-default").form-check-label Default
+                        .form-check
+                            input(type="checkbox", checked="true").form-check-input#checkbox-checked
+                            label(for="checkbox-checked").form-check-label Checked
+                    .radio-wrapper.col-4
+                        .form-check
+                            input(type="radio").form-check-input#radio-default
+                            label(for="radio-default").form-check-label Default
+                        .form-check
+                            input(type="radio", checked="true").form-check-input#radio-selected
+                            label(for="radio-selected").form-check-label Selected
