@@ -1,0 +1,56 @@
+[class^=arangi__alert] {
+    display: flex;
+    padding: 10px 12px 10px 26px;
+
+    &:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    [class*=alert] {
+        display: inline-block;
+        font-size: $font-size__15;
+        color: $color__white--natural;
+        align-self: center;
+
+        &[class*=__content] {
+            margin: 0;
+            margin-left: 10px;
+        }
+
+        &[class*=__close-button] {
+            margin-left: auto;
+            width: 26px;
+            height: auto;
+            
+            i.ti-close {
+                background-color: $color__white--natural;
+                border-radius: 50%;
+                padding: 6px;
+            }
+        }
+    }
+
+    &[class*=--success] {
+        background-color: $color__red--base;
+
+        [class*=__close-button] {
+            color: $color__red--base;
+        }
+    }
+    
+    &[class*=--notification] {
+        background-color: $color__orange--base;
+
+        [class*=__close-button] {
+            color: $color__orange--base;
+        }
+    }
+    
+    &[class*=--warning] {
+        background-color: $color__green--lime;
+
+        [class*=__close-button] {
+            color: $color__green--lime;
+        }
+    }
+}

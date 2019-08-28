@@ -269,6 +269,40 @@ ul[class|=arangi__list], ol[class|=arangi__list] {
       content: "--";
       margin-right: 10px; }
 
+[class^=arangi__alert] {
+  display: flex;
+  padding: 10px 12px 10px 26px; }
+  [class^=arangi__alert]:not(:last-child) {
+    margin-bottom: 10px; }
+  [class^=arangi__alert] [class*=alert] {
+    display: inline-block;
+    font-size: 0.9375rem;
+    color: #fff;
+    align-self: center; }
+    [class^=arangi__alert] [class*=alert][class*=__content] {
+      margin: 0;
+      margin-left: 10px; }
+    [class^=arangi__alert] [class*=alert][class*=__close-button] {
+      margin-left: auto;
+      width: 26px;
+      height: auto; }
+      [class^=arangi__alert] [class*=alert][class*=__close-button] i.ti-close {
+        background-color: #fff;
+        border-radius: 50%;
+        padding: 6px; }
+  [class^=arangi__alert][class*=--success] {
+    background-color: #f52e55; }
+    [class^=arangi__alert][class*=--success] [class*=__close-button] {
+      color: #f52e55; }
+  [class^=arangi__alert][class*=--notification] {
+    background-color: #f4ae7b; }
+    [class^=arangi__alert][class*=--notification] [class*=__close-button] {
+      color: #f4ae7b; }
+  [class^=arangi__alert][class*=--warning] {
+    background-color: #b4d932; }
+    [class^=arangi__alert][class*=--warning] [class*=__close-button] {
+      color: #b4d932; }
+
 /**
  * Sections
  *
