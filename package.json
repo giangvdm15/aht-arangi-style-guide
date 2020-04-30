@@ -4,7 +4,7 @@
   "description": "Just a front-end project @ AHT JSC.",
   "main": "index.js",
   "dependencies": {
-    "jquery": "^1.9.1",
+    "jquery": "^3.5.0",
     "popper.js": "^1.15.0"
   },
   "devDependencies": {
